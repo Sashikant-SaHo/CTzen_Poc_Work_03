@@ -1,0 +1,16 @@
+<div class="container pt-4">
+  <div class="card w-75 border border-success">
+    <div class="card-body">
+      <h2>Textbox</h2>
+      <p>This Is Textbox Component</p>
+      <input type="text" />
+      <div
+        *ngFor="let user of users"
+        cdkDrag
+        (cdkDropListDropped)="onDrop($event)"
+      >
+        <span> {{ user.TextList }} </span>
+      </div>
+    </div>
+  </div>
+</div>
